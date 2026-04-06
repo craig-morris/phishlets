@@ -1,0 +1,1 @@
+This tool is for educational and research purposes only. The author is not responsible for any misuse. Use this tool only legally and ethically, in controlled environments for cybersecurity defense testing. By using this tool, you agree to do so responsibly and at your own risk.
